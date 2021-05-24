@@ -5,6 +5,7 @@ const app = express();
 const { port } = require("./config/config.js");
 
 // If GraphQL is being used serve via /graphql endpoint the graphiql interface
+app.disable("x-powered-by");
 app.use("/graphql", graphqlHTTP({ schema, graphiql: true }));
 
 app.listen(port, () => {
