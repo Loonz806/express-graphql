@@ -4,7 +4,84 @@
 
 # Express-GraphQL
 
-_learnings into GraphQL and what role it solves by making graphs over restful conventions/routing_
+_Learning the bits about Express/GraphQL via a course_
+
+to get started
+
+```
+npm install
+```
+
+then to start the fake server via json-server package as an outside integration
+
+```
+npm run json:server
+```
+
+then to create a running nodemon graphQL instance you can run
+
+```
+npm run dev
+```
+
+and then visit http://localhost:4000/graphql
+
+## Things to do
+
+Using the http://localhost:4000/graphql you can add a query a user by querying on the left panel
+In this case user with id of 23 is in the db.json ( you can remove or add fields on this person )
+
+```
+{
+  user (id:"23") {
+    id
+    firstName
+    age
+    company {
+      name
+      description
+      id
+    }
+  }
+}
+```
+
+Or add users by leveraging a mutation
+
+```
+mutation {
+  addUser(firstName:"Bobby", age:58) {
+    id,
+    age,
+    firstName
+  }
+}
+```
+
+Or edit that user
+
+```
+mutation {
+  editUser(id: <id in db.json>, companyId: "2") {
+    id,
+    firstName,
+    age
+  }
+}
+```
+
+Or even delete that user
+
+```
+mutation {
+  deleteUser(id: <id in db.json>) {
+    id
+  }
+}
+```
+
+Alot of these tips follow the Restful Conventions
+For more read the schema/schema.js
 
 ### Restful Conventions / Routing Examples
 
