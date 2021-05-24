@@ -1,24 +1,19 @@
 {
-  "posts": [
+  "users": [
     {
-      "title": "JSON SERVER",
-      "author": "foo",
-      "id": 1
+      "id": "23",
+      "firstName": "Bill",
+      "age": 20
     },
     {
-      "title": "REACT",
-      "author": "facebook",
-      "id": 2
+      "id": "47",
+      "firstName": "Samantha",
+      "age": 21
     },
     {
-      "title": "BOOTSTRAP",
-      "author": "css master",
-      "id": 3
-    },
-    {
-      "title": "MEDIUM",
-      "author": "medium",
-      "id": 4
+      "id": "40",
+      "firstName": "Alex",
+      "age": 40
     }
   ]
 }
