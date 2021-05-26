@@ -10,7 +10,7 @@ const CompanyType = new GraphQLObjectType({
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     users: {
-      // We expect lists of users using this instead
+      // We expect lists of users using this instead, GraphQLList
       type: new GraphQLList(UserType),
       resolve(parentValue, args) {
         return axios

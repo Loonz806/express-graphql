@@ -3,7 +3,7 @@ const { GraphQLObjectType, GraphQLString } = graphql;
 const axios = require("axios");
 
 // demonstrating connection to an outside server rather than static wiring.
-// adding siblings to make other connection queries for the RootQueryType
+// adding siblings to make other connection queries for the RootQueryType, pay attention to UserType, CompanyType
 const RootQueryType = new GraphQLObjectType({
   name: "RootQueryType",
   fields: () => ({
