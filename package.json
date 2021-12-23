@@ -4,7 +4,7 @@
   "description": "express/graphql learnings",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "start": "nodemon server/server.js",
     "json:server": "json-server --watch db.json",
     "check-format": "npm run pretty -- --list-different",
     "commit": "npx git-cz",
@@ -12,7 +12,8 @@
     "format": "npm run pretty -- --write",
     "lint": "eslint --ignore-path .gitignore --ext .js --ext .jsx .",
     "pretty": "prettier --ignore-path .gitignore \"**/*.+(js|json|md)\"",
-    "validate": "npm-run-all --parallel check-format lint"
+    "validate": "npm-run-all --parallel check-format lint",
+    "serve": "npm-run-all --parallel json:server start"
   },
   "author": "Lenny Peters <@loonz206>",
   "license": "ISC",

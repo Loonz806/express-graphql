@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "server/schema"],
   "compilerOptions": {
     "module": "es6",
     "target": "es2019"
