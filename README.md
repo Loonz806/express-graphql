@@ -105,3 +105,7 @@ _things can get complicated the more deeper and nested as you go_
 ### However these breakdown once we get into lots of http requests or super nested data
 
 Hence why using GraphQL perhaps can be a benefit
+
+### Additions ( React to render and display data, transformations )
+
+TBD
