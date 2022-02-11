@@ -22,6 +22,12 @@ npm run json:server
 then to create a running nodemon graphQL instance you can run
 
 ```
+npm run start
+```
+
+or generate the combination by running
+
+```
 npm run dev
 ```
 
