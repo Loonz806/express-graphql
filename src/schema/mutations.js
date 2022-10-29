@@ -1,12 +1,8 @@
 // Mutations ( adds, or modifies data )
 const graphql = require("graphql");
 const UserType = require("./user_type");
-const {
-  GraphQLObjectType,
-  GraphQLNonNull,
-  GraphQLString,
-  GraphQLInt,
-} = graphql;
+const { GraphQLObjectType, GraphQLNonNull, GraphQLString, GraphQLInt } =
+  graphql;
 const axios = require("axios");
 
 const mutation = new GraphQLObjectType({
