@@ -6,7 +6,7 @@ const mutation = require("./mutations");
 module.exports = new GraphQLSchema({
   // And requires a root query to jump off into
   query: RootQueryType,
-  mutations: mutation,
+  mutation,
 });
 
 // You can make fragments in GraphQL so you can reduce copy/pasting

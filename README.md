@@ -13,7 +13,13 @@ to get started
 npm install
 ```
 
-then to start the fake server via json-server package as an outside integration
+then make a `.env` file at the root of the project and add the following, or whatever port you would want
+
+```
+PORT=4000
+```
+
+then to start the fake server via json-server package as an outside integration, on http://localhost:3000
 
 ```
 npm run json:server
@@ -30,8 +36,6 @@ or generate the combination by running
 ```
 npm run dev
 ```
-
-and then visit http://localhost:4000/graphql
 
 ## Things to do
 

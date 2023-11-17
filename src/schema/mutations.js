@@ -6,7 +6,7 @@ const { GraphQLObjectType, GraphQLNonNull, GraphQLString, GraphQLInt } =
 const axios = require("axios");
 
 const mutation = new GraphQLObjectType({
-  name: "Mutation",
+  name: "mutation",
   fields: {
     addUser: {
       type: UserType,
@@ -24,7 +24,7 @@ const mutation = new GraphQLObjectType({
     editUser: {
       type: UserType,
       args: {
-        id: { type: GraphQLNonNull(GraphQLString) },
+        id: { type: new GraphQLNonNull(GraphQLString) },
         firstName: { type: GraphQLString },
         age: { type: GraphQLInt },
         companyId: { type: GraphQLString },
@@ -38,7 +38,7 @@ const mutation = new GraphQLObjectType({
     deleteUser: {
       type: UserType,
       args: {
-        id: { type: GraphQLNonNull(GraphQLString) },
+        id: { type: new GraphQLNonNull(GraphQLString) },
       },
       resolve(parentValue, { id }) {
         return axios
